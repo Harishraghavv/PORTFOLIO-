@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harish Raghavendra | Personal Portfolio</title>
+  <meta name="description" content="Personal Portfolio of Harish Raghavendra - Aspiring Web Developer, Computer Science Scholar, Tech Enthusiast, and Student Head.">
+  
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome for crisp vector icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navigation Bar -->
+  <header class="navbar-wrapper" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Harish Raghavendra Home">
+        <span class="logo-accent">&lt;</span>Harish<span class="logo-accent">/&gt;</span>
+      </a>
+
+      <!-- Desktop & Tablet Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Utilities: Theme Toggle & Mobile Menu Button -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+          <i class="fa-solid fa-moon theme-icon-dark"></i>
+          <i class="fa-solid fa-sun theme-icon-light"></i>
+        </button>
+
+        <a href="#contact" class="btn btn-sm btn-outline hire-me-btn">Hire Me</a>
+
+        <button class="mobile-toggle-btn" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="pulse-dot"></span>
+            <span>Open to Internship & Opportunities</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Harish Raghavendra</span>
+          </h1>
+
+          <h2 class="hero-subtitle">
+            I am a <span class="typing-text" id="typing-text"></span><span class="cursor">&nbsp;</span>
+          </h2>
+
+          <p class="hero-desc">
+            Computer Science scholar at Thiruvalluvar University with hands-on experience in 
+            <strong>Python</strong>, <strong>PHP</strong>, and <strong>Web Development</strong>. 
+            Blending strong problem-solving and AI-accelerated workflows with the discipline and teamwork of a basketball athlete.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore My Work</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Let's Connect</span>
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+
+          <!-- Quick Social Links -->
+          <div class="hero-socials">
+            <a href="https://www.linkedin.com/in/harish-raghavendra-0a5599320" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="social-icon">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:harishraghav.prabha@gmail.com" aria-label="Send Email" class="social-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="tel:+919342512329" aria-label="Phone Call" class="social-icon">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+            <a href="https://www.instagram.com/harish_raghav_17" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile" class="social-icon">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-card-wrapper">
+            <div class="glow-backdrop"></div>
+            <div class="profile-card">
+              <div class="profile-avatar-wrapper">
+                <div class="profile-image-frame">
+                  <img src="assets/profile.jpg" alt="Harish Raghavendra" class="profile-avatar-img">
+                </div>
+                <div class="avatar-status-badge" title="Available for opportunities">
+                  <span class="status-indicator"></span>
+                </div>
+              </div>
+              <div class="profile-badge-role">Student Head & Coordinator</div>
+              <h3 class="profile-name">Harish Raghavendra</h3>
+              <p class="profile-location"><i class="fa-solid fa-location-dot"></i> Greater Chennai Area, TN</p>
+              
+              <hr class="card-divider">
+
+              <div class="quick-stats-grid">
+                <div class="stat-item">
+                  <span class="stat-number">2026</span>
+                  <span class="stat-label">CreateX Fest</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">B.Sc</span>
+                  <span class="stat-label">Comp Science</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">SQL</span>
+                  <span class="stat-label">Certified</span>
+                </div>
+              </div>
+
+              <div class="athlete-pill">
+                <i class="fa-solid fa-basketball"></i>
+                <span>Discipline & Teamwork Focused</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Driven by Curiosity, Defined by Discipline</h2>
+          <p class="section-subtitle">A glimpse into my background, philosophy, and passions.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-content">
+            <p class="lead-text">
+              I am a passionate <strong>Computer Science Scholar</strong> dedicated to building practical, reliable, and impactful technology solutions.
+            </p>
+            <p>
+              I possess hands-on experience in <strong>Python, PHP, SQL</strong>, and modern <strong>Web Development</strong>. I take pride in applying analytical problem-solving skills to craft performant websites and software applications. I continually explore emerging tools, including leveraging modern <strong>AI technologies</strong> to boost development productivity, code quality, and engineering innovation.
+            </p>
+            <p>
+              Beyond the code editor, I actively participated in <strong>CreateX 2026</strong>, a national-level idea and prototype fest, where my team tackled real-world challenges through creative critical thinking. As a <strong>Student Head, Student Coordinator</strong>, and <strong>Public Speaker</strong>, I cultivate strong interpersonal bonds, guide project teams, and lead with clarity and empathy.
+            </p>
+            <p>
+              My work ethic is heavily shaped by my athletic journey as a <strong>basketball player</strong> — instilling laser focus, agility under pressure, and genuine commitment to collective team success.
+            </p>
+
+            <div class="about-quick-info">
+              <div class="info-row">
+                <span class="info-title"><i class="fa-solid fa-graduation-cap"></i> Degree:</span>
+                <span class="info-value">B.Sc. Computer Science (2024 - 2027)</span>
+              </div>
+              <div class="info-row">
+                <span class="info-title"><i class="fa-solid fa-university"></i> University:</span>
+                <span class="info-value">Thiruvalluvar University, Vellore</span>
+              </div>
+              <div class="info-row">
+                <span class="info-title"><i class="fa-solid fa-envelope"></i> Email:</span>
+                <span class="info-value"><a href="mailto:harishraghav.prabha@gmail.com">harishraghav.prabha@gmail.com</a></span>
+              </div>
+              <div class="info-row">
+                <span class="info-title"><i class="fa-solid fa-phone"></i> Mobile:</span>
+                <span class="info-value"><a href="tel:+919342512329">+91 9342512329</a></span>
+              </div>
+              <div class="info-row">
+                <span class="info-title"><i class="fa-solid fa-map-pin"></i> Location:</span>
+                <span class="info-value">Ambur, Greater Chennai Area, Tamil Nadu</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-pillars">
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <div class="pillar-body">
+                <h3>Web & Software Dev</h3>
+                <p>Translating requirements into responsive, interactive web experiences and efficient backend logic.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <div class="pillar-body">
+                <h3>AI-Enhanced Workflow</h3>
+                <p>Harnessing modern AI tools and developer utilities to accelerate prototyping, debugging, and ideation.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <i class="fa-solid fa-users-gear"></i>
+              </div>
+              <div class="pillar-body">
+                <h3>Leadership & Coordination</h3>
+                <p>Proven track record as Student Head & Event Coordinator organizing student initiatives and tech fests.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <i class="fa-solid fa-medal"></i>
+              </div>
+              <div class="pillar-body">
+                <h3>Athletic Mindset</h3>
+                <p>Bringing resilience, sportsmanship, and consistent daily dedication drawn from competitive basketball.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Core Competencies</span>
+          <h2 class="section-title">Technical & Professional Skills</h2>
+          <p class="section-subtitle">A balanced toolkit of frontend development, backend logic, databases, and leadership.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Category 1: Frontend & Web -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon"><i class="fa-brands fa-html5"></i></div>
+              <h3>Web Development</h3>
+            </div>
+            <p class="cat-description">Crafting clean, accessible, and responsive user interfaces.</p>
+            <div class="skill-items">
+              <div class="skill-pill"><i class="fa-brands fa-html5"></i> HTML5</div>
+              <div class="skill-pill"><i class="fa-brands fa-css3-alt"></i> CSS3 & Flexbox/Grid</div>
+              <div class="skill-pill"><i class="fa-brands fa-js"></i> JavaScript (ES6+)</div>
+              <div class="skill-pill"><i class="fa-solid fa-mobile-screen"></i> Responsive Web Design</div>
+              <div class="skill-pill"><i class="fa-solid fa-code"></i> DOM Manipulation</div>
+              <div class="skill-pill"><i class="fa-solid fa-palette"></i> UI & UX Principles</div>
+            </div>
+          </div>
+
+          <!-- Category 2: Backend & Database -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon"><i class="fa-solid fa-database"></i></div>
+              <h3>Backend & Databases</h3>
+            </div>
+            <p class="cat-description">Managing business logic, data modeling, and query execution.</p>
+            <div class="skill-items">
+              <div class="skill-pill featured"><i class="fa-solid fa-certificate"></i> SQL (Certified Basics)</div>
+              <div class="skill-pill"><i class="fa-brands fa-python"></i> Python</div>
+              <div class="skill-pill"><i class="fa-brands fa-php"></i> PHP</div>
+              <div class="skill-pill"><i class="fa-solid fa-server"></i> Relational Database Design</div>
+              <div class="skill-pill"><i class="fa-solid fa-network-wired"></i> CRUD Operations</div>
+              <div class="skill-pill"><i class="fa-solid fa-shield-halved"></i> Data Validation</div>
+            </div>
+          </div>
+
+          <!-- Category 3: Tools & Modern Tech -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+              <h3>Tools & Software</h3>
+            </div>
+            <p class="cat-description">Modern developer workflow, versioning, and AI acceleration.</p>
+            <div class="skill-items">
+              <div class="skill-pill"><i class="fa-brands fa-git-alt"></i> Git Version Control</div>
+              <div class="skill-pill"><i class="fa-brands fa-github"></i> GitHub</div>
+              <div class="skill-pill"><i class="fa-solid fa-robot"></i> AI Productivity Tools</div>
+              <div class="skill-pill"><i class="fa-solid fa-terminal"></i> VS Code & Terminal</div>
+              <div class="skill-pill"><i class="fa-solid fa-diagram-project"></i> SDLC Fundamentals</div>
+              <div class="skill-pill"><i class="fa-solid fa-bug"></i> Debugging & Testing</div>
+            </div>
+          </div>
+
+          <!-- Category 4: Leadership & Interpersonal -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon"><i class="fa-solid fa-people-group"></i></div>
+              <h3>Leadership & Attributes</h3>
+            </div>
+            <p class="cat-description">Interpersonal capabilities honed through leadership and athletics.</p>
+            <div class="skill-items">
+              <div class="skill-pill featured"><i class="fa-solid fa-crown"></i> Team Leadership</div>
+              <div class="skill-pill"><i class="fa-solid fa-calendar-check"></i> Student Coordination</div>
+              <div class="skill-pill"><i class="fa-solid fa-bullhorn"></i> Public Speaking</div>
+              <div class="skill-pill"><i class="fa-solid fa-lightbulb"></i> Critical Thinking</div>
+              <div class="skill-pill"><i class="fa-solid fa-basketball"></i> Athletic Discipline</div>
+              <div class="skill-pill"><i class="fa-solid fa-handshake"></i> Cross-functional Teamwork</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio Showcase</span>
+          <h2 class="section-title">Featured Projects & Prototypes</h2>
+          <p class="section-subtitle">Real-world applications, prototypes, and solutions demonstrating practical technical execution.</p>
+        </div>
+
+        <!-- Project Filter Controls -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web & Full-Stack</button>
+          <button class="filter-btn" data-filter="python">Python & SQL</button>
+          <button class="filter-btn" data-filter="fest">Innovations & Fests</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: CreateX 2026 Prototype -->
+          <article class="project-card" data-category="fest web">
+            <div class="project-banner project-banner-1">
+              <div class="project-tag-badge">CreateX 2026</div>
+              <div class="banner-icon"><i class="fa-solid fa-lightbulb"></i></div>
+            </div>
+            <div class="project-content">
+              <div class="project-category">Innovation & Prototype Fest</div>
+              <h3 class="project-title">CreateX 2026 National Innovation Prototype</h3>
+              <p class="project-desc">
+                Developed and pitched a functional technology solution at CreateX 2026, a national-level idea & prototype fest. Focused on creative problem-solving, real-time teamwork, and user-centric software design.
+              </p>
+              <div class="project-tech-stack">
+                <span>Problem Solving</span>
+                <span>Prototyping</span>
+                <span>Team Leadership</span>
+                <span>Presentation</span>
+              </div>
+              <div class="project-actions">
+                <a href="#contact" class="btn-link">Inquire Details <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Campus & Event Management Portal -->
+          <article class="project-card" data-category="web">
+            <div class="project-banner project-banner-2">
+              <div class="project-tag-badge">Full-Stack</div>
+              <div class="banner-icon"><i class="fa-solid fa-clipboard-list"></i></div>
+            </div>
+            <div class="project-content">
+              <div class="project-category">Web Application</div>
+              <h3 class="project-title">Student & Event Coordination Portal</h3>
+              <p class="project-desc">
+                A streamlined web portal designed to assist student heads and event coordinators in registering participants, managing schedules, and broadcasting live college announcements with an intuitive admin view.
+              </p>
+              <div class="project-tech-stack">
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>JavaScript</span>
+                <span>CSS3</span>
+              </div>
+              <div class="project-actions">
+                <a href="#contact" class="btn-link">View Architecture <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: SQL Database Query & Analytics Tool -->
+          <article class="project-card" data-category="python">
+            <div class="project-banner project-banner-3">
+              <div class="project-tag-badge">Database & Logic</div>
+              <div class="banner-icon"><i class="fa-solid fa-database"></i></div>
+            </div>
+            <div class="project-content">
+              <div class="project-category">Data & Automation</div>
+              <h3 class="project-title">SQL Records & Schema Analytics System</h3>
+              <p class="project-desc">
+                A Python-backed relational database utility implementing robust SQL queries for transaction records, student databases, data normalization, and structured reporting.
+              </p>
+              <div class="project-tech-stack">
+                <span>Python</span>
+                <span>SQL</span>
+                <span>Data Modeling</span>
+                <span>Reports</span>
+              </div>
+              <div class="project-actions">
+                <a href="#contact" class="btn-link">Explore Code <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Athletic Performance & Team Manager -->
+          <article class="project-card" data-category="web python">
+            <div class="project-banner project-banner-4">
+              <div class="project-tag-badge">Sports Tech</div>
+              <div class="banner-icon"><i class="fa-solid fa-basketball"></i></div>
+            </div>
+            <div class="project-content">
+              <div class="project-category">Web Utility</div>
+              <h3 class="project-title">Basketball Team & Roster Stat Tracker</h3>
+              <p class="project-desc">
+                An interactive web-based tracking dashboard for basketball squads to log game stats, track shooting percentages, schedule scrimmages, and evaluate player endurance metrics.
+              </p>
+              <div class="project-tech-stack">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Local Storage</span>
+              </div>
+              <div class="project-actions">
+                <a href="#contact" class="btn-link">Test Prototype <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Milestones Section -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Journey</span>
+          <h2 class="section-title">Education & Milestones</h2>
+          <p class="section-subtitle">Academic foundations, institutional leadership, and certified credentials.</p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-card">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">May 2024 &ndash; May 2027 (Expected)</div>
+            <div class="timeline-content">
+              <span class="timeline-badge">Undergraduate</span>
+              <h3 class="timeline-title">Bachelor of Science in Computer Science</h3>
+              <div class="timeline-institution">
+                <i class="fa-solid fa-university"></i> Thiruvalluvar University, Vellore &bull; Mazharul Uloom School/College
+              </div>
+              <p class="timeline-desc">
+                Specializing in core Computer Science, Software Development, Operating Systems, Relational Database Management Systems (RDBMS), Data Structures, and Modern Web Applications. Actively serving as Student Coordinator & Student Head.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-card">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">National Milestone &bull; 2026</div>
+            <div class="timeline-content">
+              <span class="timeline-badge accent">National Fest</span>
+              <h3 class="timeline-title">CreateX 2026 Idea & Prototype Fest</h3>
+              <div class="timeline-institution">
+                <i class="fa-solid fa-trophy"></i> National Innovation Competition
+              </div>
+              <p class="timeline-desc">
+                Engaged in intensive design-thinking sprints, building prototypes under realistic constraints, delivering pitches to industry judges, and sharpening critical thinking and team collaboration skills.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-card">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">Professional Certification</div>
+            <div class="timeline-content">
+              <span class="timeline-badge success">Certified</span>
+              <h3 class="timeline-title">SQL Basics Certification</h3>
+              <div class="timeline-institution">
+                <i class="fa-solid fa-certificate"></i> Verified Industry Knowledge
+              </div>
+              <p class="timeline-desc">
+                Comprehensive training and certification in foundational and intermediate SQL concepts including SELECT queries, multi-table JOINs, GROUP BY aggregations, constraints, and data integrity principles.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4 -->
+          <div class="timeline-card">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">Leadership & Athletics</div>
+            <div class="timeline-content">
+              <span class="timeline-badge info">Campus Leadership</span>
+              <h3 class="timeline-title">Student Head & Basketball Athlete</h3>
+              <div class="timeline-institution">
+                <i class="fa-solid fa-people-carry-box"></i> Campus Administration & Sports Team
+              </div>
+              <p class="timeline-desc">
+                Spearheading student engagement, organizing academic fests and cultural gatherings, and competing on the basketball court as a dedicated team player demonstrating endurance, discipline, and strategic thinking.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Let's Build Something Great Together</h2>
+          <p class="section-subtitle">Have an internship opportunity, project collaboration, or just want to say hello? I'd love to connect!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Information Cards -->
+          <div class="contact-info-panel">
+            <h3 class="panel-heading">Contact Information</h3>
+            <p class="panel-lead">
+              Feel free to reach out directly through any of the channels below. I am actively looking for internship roles and technology collaborations.
+            </p>
+
+            <div class="contact-cards-list">
+              <a href="mailto:harishraghav.prabha@gmail.com" class="contact-card">
+                <div class="contact-card-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-card-content">
+                  <span class="contact-card-label">Email Me</span>
+                  <span class="contact-card-value">harishraghav.prabha@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="tel:+919342512329" class="contact-card">
+                <div class="contact-card-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact-card-content">
+                  <span class="contact-card-label">Call / WhatsApp</span>
+                  <span class="contact-card-value">+91 9342512329</span>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/harish-raghavendra-0a5599320" target="_blank" rel="noopener noreferrer" class="contact-card">
+                <div class="contact-card-icon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div class="contact-card-content">
+                  <span class="contact-card-label">LinkedIn</span>
+                  <span class="contact-card-value">linkedin.com/in/harish-raghavendra</span>
+                </div>
+              </a>
+
+              <div class="contact-card non-clickable">
+                <div class="contact-card-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="contact-card-content">
+                  <span class="contact-card-label">Location</span>
+                  <span class="contact-card-value">#212 Anjanayer Kovil St, Iyannoor, Vinnamangalam, Ambur (Greater Chennai Area)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social links -->
+            <div class="contact-social-bar">
+              <span class="social-bar-label">Follow Me:</span>
+              <div class="social-bar-icons">
+                <a href="https://www.linkedin.com/in/harish-raghavendra-0a5599320" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/harish_raghav_17" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:harishraghav.prabha@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="contact-form-panel">
+            <form id="portfolio-contact-form" class="portfolio-form" novalidate>
+              <h3 class="panel-heading">Send a Message</h3>
+
+              <!-- Alert message box for feedback -->
+              <div id="form-alert" class="form-alert hidden" role="alert"></div>
+
+              <div class="form-group">
+                <label for="contact-name">Your Full Name <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-user input-icon"></i>
+                  <input type="text" id="contact-name" name="name" placeholder="e.g. John Doe" required>
+                </div>
+                <span class="error-msg" id="name-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Your Email Address <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-envelope input-icon"></i>
+                  <input type="email" id="contact-email" name="email" placeholder="e.g. john@example.com" required>
+                </div>
+                <span class="error-msg" id="email-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-pen-nib input-icon"></i>
+                  <input type="text" id="contact-subject" name="subject" placeholder="e.g. Internship Opportunity / Collaboration">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message <span class="required">*</span></label>
+                <div class="input-wrapper textarea-wrapper">
+                  <i class="fa-solid fa-message input-icon"></i>
+                  <textarea id="contact-message" name="message" rows="5" placeholder="Share your message or inquiry here..." required></textarea>
+                </div>
+                <span class="error-msg" id="message-error"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary submit-btn" id="submit-btn">
+                <span>Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="portfolio-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo">
+            <span class="logo-accent">&lt;</span>Harish<span class="logo-accent">/&gt;</span>
+          </a>
+          <p class="footer-tagline">
+            Computer Science Scholar &bull; Aspiring Web Developer &bull; Student Head
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <hr class="footer-divider">
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; <span id="current-year">2026</span> Harish Raghavendra. All rights reserved.
+        </p>
+        <p class="footer-made-with">
+          Designed with <i class="fa-solid fa-heart heart-icon"></i> for clean, modern web engineering.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to Top" title="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
